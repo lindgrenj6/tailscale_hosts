@@ -37,8 +37,6 @@ func main() {
 	defer f.Close()
 
 	must(f.WriteString(strings.Join(lines, "\n")))
-
-	fmt.Printf("%#v", lines)
 }
 
 func must[T any](thing T, err error) T {
